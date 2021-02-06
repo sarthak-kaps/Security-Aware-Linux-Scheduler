@@ -1,0 +1,49 @@
+# started on Wed Dec  2 22:38:30 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./kaslr sleep 0.000100':
+
+ 1,90,90,57,50,134      cycles                                                      
+ 2,34,47,50,92,356      instructions              #    1.23  insn per cycle         
+      14,25,27,062      cache-references                                            
+       4,96,02,095      cache-misses              #   34.802 % of all cache refs    
+    1,07,01,69,864      bus-cycles                                                  
+
+      45.190006744 seconds time elapsed
+
+      38.694121000 seconds user
+       6.491343000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:39:15 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./kaslr sleep 0.000100':
+
+    9,87,00,08,986      L1-dcache-loads                                             
+       3,39,04,375      L1-dcache-load-misses     #    0.34% of all L1-dcache hits  
+    5,68,61,98,392      L1-dcache-stores                                            
+
+      30.184453473 seconds time elapsed
+
+      25.895965000 seconds user
+       4.287415000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:39:45 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./kaslr sleep 0.000100':
+
+    9,00,17,37,376      dTLB-loads                                                  
+       2,60,72,145      dTLB-load-misses          #    0.29% of all dTLB cache hits 
+
+      27.577003714 seconds time elapsed
+
+      23.876688000 seconds user
+       3.699143000 seconds sys
+
+
+out3 ends here

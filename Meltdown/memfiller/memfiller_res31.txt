@@ -1,0 +1,49 @@
+# started on Wed Dec  2 22:44:09 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+      11,43,33,325      cycles                                                      
+         78,86,784      instructions              #    0.07  insn per cycle         
+          1,15,767      cache-references                                            
+            44,086      cache-misses              #   38.082 % of all cache refs    
+          6,70,951      bus-cycles                                                  
+
+       0.028901556 seconds time elapsed
+
+       0.028602000 seconds user
+       0.000000000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:44:09 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+         23,85,810      L1-dcache-loads                                             
+            26,664      L1-dcache-load-misses     #    1.12% of all L1-dcache hits  
+          1,63,562      L1-dcache-stores                                            
+
+       0.030539775 seconds time elapsed
+
+       0.030438000 seconds user
+       0.000000000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:44:09 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+         24,81,988      dTLB-loads                                                  
+             1,565      dTLB-load-misses          #    0.06% of all dTLB cache hits 
+
+       0.031215274 seconds time elapsed
+
+       0.031187000 seconds user
+       0.000000000 seconds sys
+
+
+out3 ends here

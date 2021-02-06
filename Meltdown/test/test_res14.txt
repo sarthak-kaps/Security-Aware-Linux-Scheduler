@@ -1,0 +1,49 @@
+# started on Wed Dec  2 22:43:43 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./test sleep 0.000100':
+
+       8,07,46,889      cycles                                                      
+         58,85,225      instructions              #    0.07  insn per cycle         
+          1,03,694      cache-references                                            
+            22,554      cache-misses              #   21.751 % of all cache refs    
+          4,73,833      bus-cycles                                                  
+
+       0.020253564 seconds time elapsed
+
+       0.020219000 seconds user
+       0.000000000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:43:43 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./test sleep 0.000100':
+
+         23,72,602      L1-dcache-loads                                             
+            26,220      L1-dcache-load-misses     #    1.11% of all L1-dcache hits  
+          1,63,629      L1-dcache-stores                                            
+
+       0.029682634 seconds time elapsed
+
+       0.025949000 seconds user
+       0.003707000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:43:43 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./test sleep 0.000100':
+
+         24,95,289      dTLB-loads                                                  
+             1,382      dTLB-load-misses          #    0.06% of all dTLB cache hits 
+
+       0.031408116 seconds time elapsed
+
+       0.031420000 seconds user
+       0.000000000 seconds sys
+
+
+out3 ends here

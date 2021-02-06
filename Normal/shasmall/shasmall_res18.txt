@@ -1,0 +1,49 @@
+# started on Wed Dec  2 22:22:09 2020
+
+
+ Performance counter stats for 'bash runme_small.sh sleep 10.000000':
+
+       1,09,06,030      cycles                                                      
+       1,53,01,017      instructions              #    1.40  insn per cycle         
+          2,54,735      cache-references                                            
+            61,459      cache-misses              #   24.127 % of all cache refs    
+            63,989      bus-cycles                                                  
+
+       0.002967895 seconds time elapsed
+
+       0.002989000 seconds user
+       0.000000000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:22:09 2020
+
+
+ Performance counter stats for 'bash runme_small.sh sleep 10.000000':
+
+         21,22,263      L1-dcache-loads                                             
+            77,853      L1-dcache-load-misses     #    3.67% of all L1-dcache hits  
+          8,16,598      L1-dcache-stores                                            
+
+       0.003013673 seconds time elapsed
+
+       0.003075000 seconds user
+       0.000000000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:22:09 2020
+
+
+ Performance counter stats for 'bash runme_small.sh sleep 10.000000':
+
+         21,33,927      dTLB-loads                                                  
+             3,579      dTLB-load-misses          #    0.17% of all dTLB cache hits 
+
+       0.003057259 seconds time elapsed
+
+       0.003117000 seconds user
+       0.000000000 seconds sys
+
+
+out3 ends here

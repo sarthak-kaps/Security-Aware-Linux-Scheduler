@@ -1,0 +1,49 @@
+# started on Thu Dec  3 12:22:37 2020
+
+
+ Performance counter stats for './rowhammer_test sleep 0.000100':
+
+    9,84,12,17,371      cycles                                                      
+    2,20,16,87,429      instructions              #    0.22  insn per cycle         
+      14,16,74,671      cache-references                                            
+      11,55,45,378      cache-misses              #   81.557 % of all cache refs    
+       5,44,35,388      bus-cycles                                                  
+
+       2.300367405 seconds time elapsed
+
+       0.000770000 seconds user
+       0.000000000 seconds sys
+
+
+out1 ends here
+# started on Thu Dec  3 12:22:40 2020
+
+
+ Performance counter stats for './rowhammer_test sleep 0.000100':
+
+      56,07,18,776      L1-dcache-loads                                             
+      11,36,28,233      L1-dcache-load-misses     #   20.26% of all L1-dcache hits  
+      19,28,22,962      L1-dcache-stores                                            
+
+       2.162162593 seconds time elapsed
+
+       0.000968000 seconds user
+       0.000000000 seconds sys
+
+
+out2 ends here
+# started on Thu Dec  3 12:22:42 2020
+
+
+ Performance counter stats for './rowhammer_test sleep 0.000100':
+
+      49,29,41,262      dTLB-loads                                                  
+          5,31,621      dTLB-load-misses          #    0.11% of all dTLB cache hits 
+
+       2.216653588 seconds time elapsed
+
+       0.000767000 seconds user
+       0.000000000 seconds sys
+
+
+out3 ends here

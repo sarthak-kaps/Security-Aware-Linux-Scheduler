@@ -1,0 +1,49 @@
+# started on Wed Dec  2 22:43:54 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+       7,67,78,637      cycles                                                      
+       2,04,49,053      instructions              #    0.27  insn per cycle         
+          8,28,616      cache-references                                            
+          2,53,247      cache-misses              #   30.563 % of all cache refs    
+          4,42,958      bus-cycles                                                  
+
+       0.019312572 seconds time elapsed
+
+       0.015699000 seconds user
+       0.003736000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:43:54 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+         65,67,775      L1-dcache-loads                                             
+          3,07,941      L1-dcache-load-misses     #    4.69% of all L1-dcache hits  
+         19,10,464      L1-dcache-stores                                            
+
+       0.030820695 seconds time elapsed
+
+       0.027621000 seconds user
+       0.003299000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:43:54 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+         65,72,604      dTLB-loads                                                  
+             9,258      dTLB-load-misses          #    0.14% of all dTLB cache hits 
+
+       0.031181692 seconds time elapsed
+
+       0.028159000 seconds user
+       0.003080000 seconds sys
+
+
+out3 ends here

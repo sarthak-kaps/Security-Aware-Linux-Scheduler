@@ -1,0 +1,53 @@
+# started on Wed Dec  2 22:44:12 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+     <not counted>      cycles                                                      
+     <not counted>      instructions                                                
+     <not counted>      cache-references                                            
+     <not counted>      cache-misses                                                
+     <not counted>      bus-cycles                                                  
+
+       0.000009464 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+out1 ends here
+# started on Wed Dec  2 22:44:12 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+         11,33,084      L1-dcache-loads                                             
+            26,138      L1-dcache-load-misses     #    2.31% of all L1-dcache hits  
+          1,55,307      L1-dcache-stores                                            
+
+       0.029551560 seconds time elapsed
+
+       0.013266000 seconds user
+       0.003316000 seconds sys
+
+
+out2 ends here
+# started on Wed Dec  2 22:44:12 2020
+
+
+ Performance counter stats for 'taskset 0x1 ./memdump 0x240000000 -1 0xffff880000000000 sleep 0.000100':
+
+         23,88,723      dTLB-loads                                                  
+             1,515      dTLB-load-misses          #    0.06% of all dTLB cache hits 
+
+       0.030030778 seconds time elapsed
+
+       0.026253000 seconds user
+       0.003750000 seconds sys
+
+
+out3 ends here

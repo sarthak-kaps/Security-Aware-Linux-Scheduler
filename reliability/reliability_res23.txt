@@ -1,0 +1,53 @@
+# started on Wed Dec  2 22:43:50 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+       8,35,85,859      cycles                                                      
+       2,06,85,967      instructions              #    0.25  insn per cycle         
+          8,79,302      cache-references                                            
+          2,52,067      cache-misses              #   28.667 % of all cache refs    
+          4,90,484      bus-cycles                                                  
+
+       0.021012732 seconds time elapsed
+
+       0.021122000 seconds user
+       0.000000000 seconds sys
+
+
+out1 ends here
+# started on Wed Dec  2 22:43:51 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+     <not counted>      L1-dcache-loads                                             
+     <not counted>      L1-dcache-load-misses                                       
+     <not counted>      L1-dcache-stores                                            
+
+       0.000007544 seconds time elapsed
+
+       0.000000000 seconds user
+       0.000000000 seconds sys
+
+
+Some events weren't counted. Try disabling the NMI watchdog:
+	echo 0 > /proc/sys/kernel/nmi_watchdog
+	perf stat ...
+	echo 1 > /proc/sys/kernel/nmi_watchdog
+out2 ends here
+# started on Wed Dec  2 22:43:51 2020
+
+
+ Performance counter stats for 'sudo taskset 0x1 ./reliability 0xffff880000000000 sleep 0.000100':
+
+         55,29,638      dTLB-loads                                                  
+             9,612      dTLB-load-misses          #    0.17% of all dTLB cache hits 
+
+       0.023157747 seconds time elapsed
+
+       0.018055000 seconds user
+       0.002873000 seconds sys
+
+
+out3 ends here
