@@ -1,3 +1,0 @@
-out1 ends here
-out2 ends here
-out3 ends here
