@@ -1,0 +1,49 @@
+# started on Thu Dec  3 12:11:47 2020
+
+
+ Performance counter stats for 'bash runme_large.sh sleep 10.000000':
+
+      19,70,45,283      cycles                                                      
+      58,21,90,679      instructions              #    2.95  insn per cycle         
+          2,59,852      cache-references                                            
+          1,01,032      cache-misses              #   38.881 % of all cache refs    
+         11,77,048      bus-cycles                                                  
+
+       0.049592287 seconds time elapsed
+
+       0.048416000 seconds user
+       0.001217000 seconds sys
+
+
+out1 ends here
+# started on Thu Dec  3 12:11:47 2020
+
+
+ Performance counter stats for 'bash runme_large.sh sleep 10.000000':
+
+       3,57,82,115      L1-dcache-loads                                             
+            65,911      L1-dcache-load-misses     #    0.18% of all L1-dcache hits  
+         83,20,627      L1-dcache-stores                                            
+
+       0.048494265 seconds time elapsed
+
+       0.048542000 seconds user
+       0.000000000 seconds sys
+
+
+out2 ends here
+# started on Thu Dec  3 12:11:47 2020
+
+
+ Performance counter stats for 'bash runme_large.sh sleep 10.000000':
+
+       3,58,13,312      dTLB-loads                                                  
+             3,191      dTLB-load-misses          #    0.01% of all dTLB cache hits 
+
+       0.049234572 seconds time elapsed
+
+       0.048033000 seconds user
+       0.001142000 seconds sys
+
+
+out3 ends here
