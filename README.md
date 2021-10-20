@@ -36,3 +36,9 @@ For attacking processes we referred to -
    * The results after running perf tools on the processes is present in the folder [Meltdown](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/Meltdown)  
  * Rowhammer - https://github.com/google/rowhammer-test
    * The results after running perf tools on the processes is present in the folder [Rowhammer](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/rowhammer)
+
+The folder [training](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/training) contains the training data and the training script.
+
+The file [data_collector.cpp](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/blob/main/data_collecter.cpp) contains the driver program that uses perf-tools to collect HPC values for various events for the attacking and non-attacking processes.
+
+The file [gendata.ipynb](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/blob/main/gendata.ipynb) does data analysis and generates data for training.
