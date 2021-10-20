@@ -21,6 +21,18 @@ Hardware performance counters are registers in the system that can store occuren
   * page faults 
 
 And many more ... <br>
+
 The key idea is that attacking processes have a distinct footprint with respect to these HPCs.
 We collected HPCs for multiple attacking and non-attacking processes. The HPCs collected for these processes can be treated as their features. <br>
+The collection of HPCs was done using perf tools - https://github.com/brendangregg.<br>
 We then used a simple machine learning algorithm to learn a classifier which separated the attacking processes against the non-attacking ones on select features. 
+### Non Attacking Processes
+For non attacking processes we referred to multiple programs from the MIBENCH collection - https://github.com/ekut-es/mibench.
+The results after running perf tools on the processes is present in the folder [MIBENCH](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/MIBENCH). 
+
+### Attacking Processes
+For attacking processes we referred to - 
+ * Meltdown - https://github.com/IAIK/meltdown
+   * The results after running perf tools on the processes is present in the folder [Meltdown](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/Meltdown).  
+ * Rowhammer - https://github.com/google/rowhammer-test
+   * The results after running perf tools on the processes is present in the folder [Rowhammer](https://github.com/sarthak-kaps/Security_Aware_Linux_Scheduler_CS3500/tree/main/rowhammer).
